@@ -1,0 +1,213 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onPageChange",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onOutsideCall",
+		"onBeginDragOver",
+		"onDragOver",
+		"onDrop",
+		"onAfterKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onAfterEdit",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"Button": {
+					"type": "button",
+					"top": 767,
+					"left": 730,
+					"width": 70,
+					"height": 20,
+					"sizingX": "fixed",
+					"sizingY": "move",
+					"dataSource": "Button",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancel",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 767,
+					"left": 810,
+					"width": 70,
+					"height": 20,
+					"sizingX": "fixed",
+					"sizingY": "move",
+					"dataSource": "Button",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "OK",
+					"defaultButton": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Input": {
+					"type": "input",
+					"left": 101,
+					"top": 694,
+					"width": 251,
+					"height": 17,
+					"dataSource": "[Templates:4]name:2",
+					"sizingY": "move",
+					"fontWeight": "bold",
+					"stroke": "#0000cd"
+				},
+				"Text": {
+					"type": "text",
+					"text": "Name:",
+					"top": 695,
+					"left": 10,
+					"width": 81,
+					"height": 16,
+					"textAlign": "right",
+					"sizingY": "move",
+					"fontWeight": "bold",
+					"stroke": "#0000cd"
+				},
+				"WParea": {
+					"type": "write",
+					"top": 87,
+					"left": 0,
+					"width": 880,
+					"height": 590,
+					"sizingX": "fixed",
+					"sizingY": "grow",
+					"dataSource": "[Templates:4]wp:3",
+					"hideFocusRing": true,
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"dpi": 0,
+					"borderStyle": "none",
+					"method": "ObjectMethods/WParea.4dm",
+					"events": [
+						"onLoad",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onSelectionChange",
+						"onAfterEdit"
+					],
+					"displayFormulaAsSymbol": true,
+					"showReferences": true
+				},
+				"WPtoolbar": {
+					"type": "subform",
+					"top": 0,
+					"left": 0,
+					"width": 880,
+					"height": 90,
+					"sizingX": "fixed",
+					"detailForm": "WP_Toolbar",
+					"focusable": false,
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable"
+				},
+				"Button5": {
+					"type": "button",
+					"text": "Previous",
+					"top": 766,
+					"left": 20,
+					"width": 86,
+					"height": 21,
+					"events": [
+						"onClick"
+					],
+					"action": "previousRecord",
+					"sizingX": "fixed",
+					"sizingY": "move"
+				},
+				"Button6": {
+					"type": "button",
+					"text": "Next",
+					"top": 766,
+					"left": 121,
+					"width": 86,
+					"height": 21,
+					"events": [
+						"onClick"
+					],
+					"action": "nextRecord",
+					"sizingX": "fixed",
+					"sizingY": "move"
+				},
+				"Button2": {
+					"type": "button",
+					"text": "SET CONTEXT",
+					"top": 697,
+					"left": 715,
+					"width": 165,
+					"height": 23,
+					"events": [
+						"onClick"
+					],
+					"sizingX": "move",
+					"sizingY": "move",
+					"method": "ObjectMethods/Button2.4dm"
+				},
+				"Text1": {
+					"type": "text",
+					"text": "Order:",
+					"top": 725,
+					"left": 382,
+					"width": 91,
+					"height": 16,
+					"textAlign": "right",
+					"sizingY": "move"
+				},
+				"Button3": {
+					"type": "button",
+					"top": 37,
+					"left": 961,
+					"width": 122,
+					"height": 17,
+					"text": "Name tables",
+					"focusable": false,
+					"method": "ObjectMethods/Button3.4dm",
+					"events": [
+						"onClick"
+					],
+					"sizingX": "move"
+				}
+			}
+		}
+	],
+	"geometryStamp": 170,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"method": "method.4dm"
+}
