@@ -321,7 +321,8 @@
 					"events": [
 						"onClick"
 					],
-					"sizingX": "fixed"
+					"sizingX": "fixed",
+					"method": "ObjectMethods/btnPDF2.4dm"
 				},
 				"btnHTML4": {
 					"type": "button",
