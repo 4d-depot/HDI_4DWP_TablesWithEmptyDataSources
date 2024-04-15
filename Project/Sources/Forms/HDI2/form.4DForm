@@ -307,7 +307,8 @@
 					"events": [
 						"onClick"
 					],
-					"sizingX": "fixed"
+					"sizingX": "fixed",
+					"method": "ObjectMethods/btnHTML3.4dm"
 				},
 				"btnPDF2": {
 					"type": "button",
@@ -336,7 +337,8 @@
 					"events": [
 						"onClick"
 					],
-					"sizingX": "fixed"
+					"sizingX": "fixed",
+					"method": "ObjectMethods/btnHTML4.4dm"
 				},
 				"Static Picture3": {
 					"type": "picture",
