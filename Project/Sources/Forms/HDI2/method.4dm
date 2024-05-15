@@ -13,10 +13,13 @@ Case of
 		Form:C1466.tabControl.index:=0
 		
 		LISTBOX SELECT ROW:C912(*; "LB"; 1)
-		WP SET VIEW PROPERTIES:C1648(WParea2; New object:C1471(wk formula highlight:K81:350; wk never:K81:352; wk formula highlight color:K81:351; "LightYellow"; wk visible references:K81:286; True:C214))
 		
+		WP SET VIEW PROPERTIES:C1648(WParea2; New object:C1471(wk formula highlight:K81:350; wk never:K81:352; wk formula highlight color:K81:351; "LightYellow"; wk visible references:K81:286; True:C214; wk display formula as symbol:K81:368; True:C214))
 		Form:C1466.highlight:=False:C215
 		Form:C1466.trace:=False:C215
+		
+		Form:C1466.displayValues:=1
+		Form:C1466.displayTemplate:=0
 		
 		Form:C1466.action:="gotoPage"
 		SET TIMER:C645(-1)
@@ -40,6 +43,7 @@ Case of
 			: (Form:C1466.action="loadSample")
 				
 				UpdateTemplateSample
+				FillContext("Fill")
 				Form:C1466.action:=""
 				
 		End case 

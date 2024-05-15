@@ -84,8 +84,8 @@
 				"Rectangle": {
 					"type": "rectangle",
 					"top": 70,
-					"left": 678,
-					"width": 560,
+					"left": 598,
+					"width": 640,
 					"height": 690,
 					"borderRadius": 6,
 					"fill": "#D4D4D4",
@@ -122,8 +122,8 @@
 				"WParea1": {
 					"type": "write",
 					"top": 90,
-					"left": 698,
-					"width": 520,
+					"left": 608,
+					"width": 620,
 					"height": 650,
 					"sizingX": "grow",
 					"sizingY": "grow",
@@ -146,7 +146,7 @@
 					"type": "write",
 					"top": 70,
 					"left": 40,
-					"width": 620,
+					"width": 540,
 					"height": 690,
 					"sizingX": "fixed",
 					"sizingY": "grow",
@@ -163,36 +163,6 @@
 					"borderStyle": "none",
 					"events": [],
 					"displayFormulaAsSymbol": true
-				},
-				"btnHTML1": {
-					"type": "button",
-					"top": 810,
-					"left": 750,
-					"width": 140,
-					"height": 19,
-					"sizingY": "move",
-					"text": "Test tables",
-					"focusable": false,
-					"method": "ObjectMethods/btnHTML1.4dm",
-					"events": [
-						"onClick"
-					],
-					"sizingX": "fixed"
-				},
-				"btnPDF1": {
-					"type": "button",
-					"top": 780,
-					"left": 750,
-					"width": 140,
-					"height": 19,
-					"sizingY": "move",
-					"text": "Display template",
-					"focusable": false,
-					"method": "ObjectMethods/btnPDF1.4dm",
-					"events": [
-						"onClick"
-					],
-					"sizingX": "fixed"
 				},
 				"btnHTML": {
 					"type": "button",
@@ -272,8 +242,8 @@
 				},
 				"Static Picture2": {
 					"type": "picture",
-					"top": 757,
-					"left": 890,
+					"top": 760,
+					"left": 810,
 					"width": 64,
 					"height": 64,
 					"picture": "/RESOURCES/Images/Arrows/ArrowLeftBottom.png",
@@ -297,12 +267,12 @@
 				},
 				"btnHTML3": {
 					"type": "button",
-					"top": 793,
-					"left": 540,
-					"width": 120,
+					"top": 780,
+					"left": 450,
+					"width": 130,
 					"height": 19,
 					"sizingY": "move",
-					"text": "Hide row",
+					"text": "Fill datasources",
 					"focusable": false,
 					"events": [
 						"onClick"
@@ -310,29 +280,14 @@
 					"sizingX": "fixed",
 					"method": "ObjectMethods/btnHTML3.4dm"
 				},
-				"btnPDF2": {
-					"type": "button",
-					"top": 773,
-					"left": 540,
-					"width": 120,
-					"height": 19,
-					"sizingY": "move",
-					"text": "Default",
-					"focusable": false,
-					"events": [
-						"onClick"
-					],
-					"sizingX": "fixed",
-					"method": "ObjectMethods/btnPDF2.4dm"
-				},
 				"btnHTML4": {
 					"type": "button",
-					"top": 813,
-					"left": 540,
-					"width": 120,
+					"top": 810,
+					"left": 450,
+					"width": 130,
 					"height": 19,
 					"sizingY": "move",
-					"text": "Hide table",
+					"text": "Clear datasources",
 					"focusable": false,
 					"events": [
 						"onClick"
@@ -340,23 +295,43 @@
 					"sizingX": "fixed",
 					"method": "ObjectMethods/btnHTML4.4dm"
 				},
-				"Static Picture3": {
-					"type": "picture",
-					"top": 757,
-					"left": 660,
-					"width": 64,
-					"height": 64,
-					"picture": "/RESOURCES/Images/Arrows/ArrowLeftBottom.png",
-					"pictureFormat": "scaled",
+				"Radio Button": {
+					"type": "radio",
+					"text": "Display template",
+					"top": 782,
+					"left": 678,
+					"width": 122,
+					"height": 17,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Radio Button.4dm",
+					"radioGroup": "DisplayMode",
+					"dataSource": "Form:C1466.displayTemplate",
 					"sizingY": "move"
 				},
-				"Text": {
-					"type": "text",
-					"text": "When table datasources are emty, tables should be displayed as…",
-					"top": 776,
-					"left": 381,
-					"width": 150,
-					"height": 51,
+				"Radio Button1": {
+					"type": "radio",
+					"text": "Display values",
+					"top": 807,
+					"left": 678,
+					"width": 122,
+					"height": 17,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Radio Button1.4dm",
+					"radioGroup": "DisplayMode",
+					"dataSource": "Form:C1466.displayValues",
+					"sizingY": "move"
+				},
+				"Static Picture3": {
+					"type": "picture",
+					"top": 770,
+					"left": 594,
+					"width": 64,
+					"height": 64,
+					"picture": "/RESOURCES/Images/Arrows/ArrowLeft.png",
 					"sizingY": "move"
 				}
 			}
@@ -366,7 +341,7 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 5225,
+	"geometryStamp": 5365,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
