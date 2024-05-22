@@ -197,11 +197,23 @@
 						"onClick"
 					],
 					"sizingX": "move"
+				},
+				"Popup Dropdown List": {
+					"type": "dropdown",
+					"left": 934,
+					"top": 145,
+					"width": 174,
+					"height": 24,
+					"events": [
+						"onDataChange"
+					],
+					"action": "emptyDatasource",
+					"sizingX": "move"
 				}
 			}
 		}
 	],
-	"geometryStamp": 177,
+	"geometryStamp": 180,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

@@ -17,7 +17,7 @@ For each ($table; $_tables)
 			
 		: ($table.dataSource.source="This.data.southAmericaDataSource")
 			$table.id:="tableSouthAmerica"
-			WP SET ATTRIBUTES:C1342($table; wk empty datasource:K81:385; "showAlternate")
+			WP SET ATTRIBUTES:C1342($table; wk empty datasource:K81:385; "showPlaceholder")  //"showAlternate")
 			
 	End case 
 	
