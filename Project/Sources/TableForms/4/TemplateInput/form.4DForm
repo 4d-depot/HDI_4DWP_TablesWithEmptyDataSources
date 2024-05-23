@@ -208,7 +208,8 @@
 						"onDataChange"
 					],
 					"action": "emptyDatasource",
-					"sizingX": "move"
+					"sizingX": "move",
+					"focusable": false
 				}
 			}
 		}

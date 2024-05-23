@@ -93,6 +93,17 @@
 					"sizingX": "grow",
 					"sizingY": "grow"
 				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 510,
+					"left": 610,
+					"width": 620,
+					"height": 240,
+					"borderRadius": 8,
+					"stroke": "#c0c0c0",
+					"sizingY": "move",
+					"sizingX": "fixed"
+				},
 				"btnTrace": {
 					"type": "checkbox",
 					"text": "Trace code",
@@ -124,7 +135,7 @@
 					"top": 90,
 					"left": 608,
 					"width": 620,
-					"height": 650,
+					"height": 410,
 					"sizingX": "grow",
 					"sizingY": "grow",
 					"dataSource": "WParea1",
@@ -333,6 +344,56 @@
 					"height": 64,
 					"picture": "/RESOURCES/Images/Arrows/ArrowLeft.png",
 					"sizingY": "move"
+				},
+				"Popup Dropdown List": {
+					"type": "dropdown",
+					"left": 947,
+					"top": 671,
+					"width": 242,
+					"height": 22,
+					"events": [
+						"onDataChange"
+					],
+					"action": "emptyDatasource",
+					"focusable": false,
+					"sizingX": "fixed",
+					"sizingY": "move"
+				},
+				"Text": {
+					"type": "text",
+					"text": "You can change the behaviour of each table using the standard action \"emptyDatasource\" associated to a dropdown list like below.\r\rSelect any table to activate this dropdown list then change the option.\r(you should switch to \"Display template\" first if tables are not visible !)",
+					"top": 530,
+					"left": 630,
+					"width": 580,
+					"height": 132,
+					"fontSize": 18,
+					"sizingX": "fixed",
+					"sizingY": "move"
+				},
+				"Text1": {
+					"type": "text",
+					"text": "Empty data source display mode:",
+					"top": 674,
+					"left": 690,
+					"width": 250,
+					"height": 16,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"sizingX": "fixed",
+					"sizingY": "move"
+				},
+				"Text2": {
+					"type": "text",
+					"text": "Note : only the 4th table has been designed to display a placeholder row!",
+					"top": 708,
+					"left": 640,
+					"width": 560,
+					"height": 22,
+					"fontSize": 16,
+					"sizingX": "fixed",
+					"sizingY": "move",
+					"fontStyle": "italic",
+					"textAlign": "center"
 				}
 			}
 		}
@@ -341,7 +402,7 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 5365,
+	"geometryStamp": 5506,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
