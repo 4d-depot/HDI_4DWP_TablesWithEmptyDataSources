@@ -1,4 +1,4 @@
-# HDI_SessionStorageByID
+# HDI_4DWP_TablesWithEmptyDataSources
 
 Manage tables with empty datasources (4D 20 R6)
 
